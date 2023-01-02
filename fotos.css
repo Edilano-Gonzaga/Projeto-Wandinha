@@ -1,0 +1,223 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family= Frank+Ruhl+Libre:wght@300 & display = swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+   
+    
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+nav {
+    width: 60%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+li{
+    padding-top: 20px;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+li:hover{
+    color: #c400f5;
+}
+
+.fotos-geral{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-fotos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.fotos-1{
+    background-image: url('https://img.quizur.com/f/img6388bdd7042bb9.21373546.jpg?lastEdited=1669905888g');
+}
+
+.fotos-2{
+    background-image: url('https://muralzinhodeideias.com.br/wp-content/uploads/2022/11/wandinha-divulgacao.jpg');
+}
+
+.fotos-3{
+    background-image: url('https://s2.glbimg.com/VF5F32bLzWBwr8LHTLStC7aDiDM=/smart/e.glbimg.com/og/ed/f/original/2022/08/22/whatsapp_image_2022-08-22_at_20.10.57.jpeg');
+}
+
+.fotos-4{
+    background-image: url('https://s2.glbimg.com/pecZqn7kuAfBhLXuwPRAyuYa6w4=/0x0:1152x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/0/u/wI1yn4QqWVZvccIHT6Bw/wednesday-rotten-tomatoes.jpg');
+}
+
+.fotos-5{
+    background-image: url('https://ovicio.com.br/wp-content/uploads/2022/11/20221127-ovicio-wandinha-jenna-ortega.jpg');
+}
+
+.fotos-6{
+    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2022/11/wednesday-netflix-jenna-ortega-1200x900-1.jpg');
+}
+
+.fotos-7{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfqeKYklp9EcNzDMZicAJQF_xMMjdGR21WA&usqp=CAU');
+}
+
+.fotos-8{
+    background-image: url('https://geekpopnews.com.br/wp-content/uploads/2022/09/Wandinha.jpg.jpg');
+}
+
+.fotos-9{
+    background-image: url('https://mundoconectado.com.br/uploads/chamadas/wandinha-imagem-divulgacao-netflix.jpg');
+}
+
+.fotos-10{
+    background-image: url('https://i1.wp.com/www.dci.com.br/wp-content/uploads/2022/11/fester-1.jpg');
+}
+
+.fotos-11{
+    background-image: url('https://bocadoinferno.com.br/wp-content/uploads/2022/12/Wandinha-2022-5.jpg');
+}
+
+.fotos-12{
+    background-image: url('https://i1.wp.com/www.dci.com.br/wp-content/uploads/2022/11/morticia-1.jpg');
+}
+.card{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+
+
+footer {
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+
+span {
+    padding-top: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+    display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+   #Banner {
+    background-position: 85%;
+   }
+
+   #trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px;
+   }
+
+   .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .trailer {
+    width: 100%;
+   }
+
+   #sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+   }
+
+   .description {
+    width: 100%;
+   }
+
+   .button {
+    width: 100%;
+    margin-top: 30px;
+   }
+
+   .card{
+    height: 60px;
+   }
+
+   .cards-container{
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+   }
+   footer{
+    height: 210px;
+   }
+
+   li{
+    padding: 5px;
+   }
+
+   span{
+    padding: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+   }
+}

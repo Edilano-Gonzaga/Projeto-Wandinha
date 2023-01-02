@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family= Frank+Ruhl+Libre:wght@300 & display = swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+
+
+body{
+    background-color: rgb(55, 1, 68);
+    
+   
+   
+    
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+nav {
+    width: 60%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+li{
+    padding-top: 20px;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+li:hover{
+    color: #c400f5;
+}
+
+footer {
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+.container{
+    width: 50%;
+    height: auto;
+    background-color: rgb(35, 0, 189);
+    color: aliceblue;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px 10px 0px 25%;
+    padding: 10px 10px 0 0;
+    border-radius: 5px;
+    
+}
+h2 {
+    margin: 10px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+p{
+    text-align: justify;
+    line-height: 30px;
+    margin: 10px ;
+    font-weight: bolder;
+}
+
+#simbolo1{
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.rede-social{
+    color: aliceblue;
+    margin-left: 10px;
+    
+}
+
+
+
+span {
+    padding-top: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+    display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+   .container{
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    
+   }
+
+   footer{
+    height: 210px;
+   }
+
+   li{
+    padding: 5px;
+   }
+
+   span{
+    padding: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+   }
+}

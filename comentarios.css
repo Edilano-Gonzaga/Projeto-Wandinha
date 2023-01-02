@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family= Frank+Ruhl+Libre:wght@300 & display = swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(55, 1, 68);
+    
+   
+   
+    
+}
+
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+nav {
+    width: 60%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+li{
+    padding-top: 20px;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+li:hover{
+    color: #c400f5;
+}
+
+footer {
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(55, 1, 68) 50%, rgb(8, 8, 8) 100%);
+}
+
+span {
+    padding-top: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+}
+
+.texto-comentario{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+    color: black;
+    border:1px solid black;
+    border-radius: 5px;
+    margin: 10px 10px 0 25%;
+    font-family: 'Frank Ruhl Libre', serif;
+    display: flex;
+}
+.data{
+    margin-top: 5px;
+    color: black;
+    
+}
+
+.container-comment{
+    display: flex;
+    width: 25%;
+    height:auto;
+    color: black;
+    margin: 10px 10px 0px 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.coment-1{
+display: flex;
+text-align: justify;
+margin-top: 5px;
+font-family:'Frank Ruhl Libre', serif;
+
+
+}
+
+.delegado{
+    width: 50px;
+    height: 70px;
+    margin: 5px 5px 5px 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+    display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .texto-comentario{
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    
+   }
+
+   .container-comment{
+    width: 90%;
+    height: auto;
+    margin: 20px;
+   }
+
+   footer{
+    height: 210px;
+   }
+
+   li{
+    padding: 5px;
+   }
+
+   span{
+    padding: 0px;
+    color: #fff;
+    font-family:'Frank Ruhl Libre', serif;
+   }
+}
